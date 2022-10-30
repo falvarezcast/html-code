@@ -11,27 +11,51 @@
     <title>Pac1 Html i Css</title>
 
     <style>
+        #contenedor {
+            width: 1140px;
+            height: auto;
+            margin: auto;
+            background-color: whitesmoke;
+        }
+
+        .contenedor {
+            position: relative;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .centrado {
+            font-family: fantasy;
+            /*Orbitron no disponible*/
+            font-size: 6ch;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
         em {
             color: green;
             font-style: normal;
         }
 
-        img {
-            width: 100%;
-            height: auto;
-        }
-
         .button {
+
             border: none;
             color: white;
             padding: 15px 64px;
             text-align: center;
-            width: 3in;
+            width: 2.5in;
             display: inline-block;
-            font-size: 16px;
+            font-size: 12px;
             margin: 8px 2px;
             cursor: pointer;
             background-color: #4CAF50;
+        }
+
+        .button:hover {
+            background-color: darkgreen;
         }
 
         footer {
@@ -39,187 +63,187 @@
             font-family: fantasy;
             /*Orbitron no disponible*/
             text-align: center;
+            font-size: x-large;
             padding: 90px;
             background-color: black;
             color: white;
+
         }
     </style>
 
 </head>
 
+
 <body>
-    <img src="imatges/cabecera.png" alt="cabecera">
+    <div id="contenedor">
 
-    <button class="button button1" onclick="alert('INICIO, BOTON TEST')">INICIO</button>
-    <button class="button button2" onclick="alert('UOC, BOTON TEST')">UOC</button>
-    <button class="button button1" onclick="alert('DISENYO GRAFICO, BOTON TEST')">DISENYO GRAFICO</button>
-    <button class="button button2" onclick="alert('CONTACTAR, BOTON TEST')">CONTACTAR</button>
+        <div class="contenedor">
+            <img src="imag/cabecera.png" alt="cabecera" style="max-width:100%;width:auto;height:auto;">
 
-    <h2>
-        <em> Best Practices</em>
+            <div class="centrado">HTML i CSS Best Practices
+            </div>
+        </div>
+        <center>
+            <button class="button button1" onclick="alert('INICIO, BOTON TEST')">INICIO</button>
+            <button class="button button2" onclick="alert('UOC, BOTON TEST')">UOC</button>
+            <button class="button button1" onclick="alert('DISENYO GRAFICO, BOTON TEST')">DISSENY GRAFIC</button>
+            <button class="button button2" onclick="alert('CONTACTAR, BOTON TEST')">CONTACTAR</button>
+        </center>
 
-    </h2>
-    <hr style="height: 3px;border-width:0;color:green;background-color:green;">
 
-    <p>HTML best practices are rules that help you create websites that are easy to maintain and read
-    </p>
-    <img src="imatges/trabajando.jpg" alt="trabajando" width="100%" height="auto">
-    <h6>People working</h6>
+        <h2><em> Best Practices</em></h2>
+        <hr style="height: 3px;border-width:0;color:green;background-color:green;">
 
-    <p>
-        <em>
-            <h3>Here are some guidelines to keep in mind when building an HTML. based website:</h3>
-        </em>
-    </p>
-    <p> Use only one &lt;h1&gt; element for one code sheet </p>
+        <p>HTML best practices are rules that help you create websites that are easy to maintain and read </p>
+        <img src="imag/trabajando.jpg" alt="trabajando" style="max-width:100%;width:auto;height:auto;">
+        <h6>People working</h6>
 
-    <p>There are six different heading tags in HTML , &lt;h1&gt; to &lt;h6&gt;. The &lt;h1&gt; tag is
-        the
-        main
-        heading (subject of the web page)
-        while the &lt;h6&gt; tag is the least important heading.</p>
+        <p><em>
+                <h3>Here are some guidelines to keep in mind when building an HTML. based website:</h3>
+            </em>
+        </p>
+        <p> Use only one &lt;h1&gt; element for one code sheet </p>
 
-    <p>The &lt;h1&gt; tag is bigger than the &gt;h2&gt; tag, the &lt;h2&gt; tag is bigger than the
-        &lt;h3&gt;
-        tag, all the way down to the &lt;h6&gt; tag. Each of the headings decreases in size according to
-        its
-        importance.</p>
+        <p>There are six different heading tags in HTML , &lt;h1&gt; to &lt;h6&gt;. The &lt;h1&gt; tag is
+            the
+            main
+            heading (subject of the web page)
+            while the &lt;h6&gt; tag is the least important heading.</p>
 
-    <p>It is important to avoid using more than one &lt;h1&gt; element for one code sheet. Having only
-        one&lt;h1&gt; element on a web page is vital for Search Engine Optimization (SEO). It helps
-        search
-        engines understand what a web page is all about (the main idea of a web page).</p>
-    <p>
-        <em>
-            <h3>Do not skip heading levels in HTML</h3>
-        </em>
-    </p>
-    <p>When using the header tags, it's vital to proceed from &lt;h1&gt; to &lt;h2&gt; to &lt;h3&gt; to
-        &lt;h4&gt; and so on...
-    </p>
-    <p>Don't use &lt;h1&gt; and then jump to &lt;h3&gt; when using header tags. It's difficult for web
-        visitors
-        using a screen reader to understand the contents of your web page when you skip heading levels.
-    </p>
-    <p> A screen reader is a technology that helps people who have difficulty seeing access and interact
-        with
-        digital content, like websites or applications via audio or touch. The main users of screen
-        readers are people who are blind or have very limited vision.
-    </p>
-    <p> You can read a little introduction to screen readers here.
-    </p>
+        <p>The &lt;h1&gt; tag is bigger than the &gt;h2&gt; tag, the &lt;h2&gt; tag is bigger than the
+            &lt;h3&gt;
+            tag, all the way down to the &lt;h6&gt; tag. Each of the headings decreases in size according to
+            its
+            importance.</p>
 
-    <p> Don't do this:
-    </p>
-    <textarea rows="8" cols="190" style="color: red;" readonly>
+        <p>It is important to avoid using more than one &lt;h1&gt; element for one code sheet. Having only
+            one&lt;h1&gt; element on a web page is vital for Search Engine Optimization (SEO). It helps
+            search
+            engines understand what a web page is all about (the main idea of a web page).</p>
+        <p><em>
+                <h3>Do not skip heading levels in HTML
+            </em></h3>
+        </p>
+        <p>When using the header tags, it's vital to proceed from &lt;h1&gt; to &lt;h2&gt; to &lt;h3&gt; to
+            &lt;h4&gt; and so on...</p>
+        <p>Don't use &lt;h1&gt; and then jump to &lt;h3&gt; when using header tags. It's difficult for web
+            visitors
+            using a screen reader to understand the contents of your web page when you skip heading levels.
+        </p>
+        <p> A screen reader is a technology that helps people who have difficulty seeing access and interact
+            with
+            digital content, like websites or applications via audio or touch. The main users of screen
+            readers
+            are
+            people who are blind or have very limited vision.</p>
+        <p> You can read a little introduction to screen readers here.</p>
+
+        <p> Don't do this: </p>
+        <textarea rows="8" cols="150" style="color: red;" readonly>
                 <h1>coding is fun</h1>
                 <h3>It is always better when you have fun coding</h3>
                 <h5>Consistency is Key</h5>
             
              </textarea>
 
-    <p>Do this instead:
-    </p>
-    <textarea rows="8" cols="190" style="color: red;" readonly>
+        <p>Do this instead:</p>
+        <textarea rows="8" cols="150" style="color: red;" readonly>
                 <h1>Can coding be fun?</h1>
                 <h2>The more you code the better you become</h2>
                 <h3>Coding is fun</h3>
-    </textarea>
-    <p>It's important to remember that just because your code works doesn't mean you're following best
-        practices.
-        This is why I always recommend using the <em><strong>W3c markup validation service</strong></em>
-        to double-check your codes.
-        You can double-check your code by copying its URL and pasting it on the site or uploading your
-        HTML file.
-        You can read the full article at
-        <em><strong>https://www.freecodecamp.org/news/html-best-practices</strong></em>
-    </p>
+</textarea>
+        <p>It's important to remember that just because your code works doesn't mean you're following best
+            practices.
+            This is why I always recommend using the <em><strong>W3c markup validation service</strong></em>
+            to
+            double-check
+            your
+            codes.
+            You can double-check your code by copying its URL and pasting it on the site or uploading your
+            HTML
+            file.
+            You can read the full article at <em><strong>
+                    https://www.freecodecamp.org/news/html-best-practices</strong></em></p>
 
-    <p>
-        <em>
-            <h3> Important Tips for Writing Better CSS</h3>
-            <hr style="height: 3px;border-width:0;color:green;background-color:green;">
-        </em>
-    </p>
+        <p><em>
+                <h3> Important Tips for Writing Better CSS</h3>
+                <hr style="height: 3px;border-width:0;color:green;background-color:green;">
+            </em></p>
 
-    <p>One of the biggest issues in programming is dealing withmaintenance. In a real-world scenario, we
-        don't
-        always start developingprojects from scratch. Mostly, we are assigned (or take) a project that
-        hasalready been written maybe a couple of years before or even longer.
-    </p>
+        <p>One of the biggest issues in programming is dealing withmaintenance. In a real-world scenario, we
+            don't
+            always start developingprojects from scratch. Mostly, we are assigned (or take) a project that
+            hasalready been written maybe a couple of years before or even longer.</p>
 
-    <p>To work efficiently on that project, first we need tounderstand the source code. This is the
-        point
-        when
-        we immediately realize theimportance of clean code. As developers, we must try to write ourcode
-        as
-        cleanly as possible.This is also the case for CSS .
-    </p>
-    <p> There are some points we needto pay attention to while writing CSS. In this post, I would like
-        to
-        share
-        someof the most important ones with you. I believe these tips will help you toimprove the
-        quality of
-        your CSS code.So let's begin...
-    </p>
-    <p><em>
-            <h3>DRY</h3>
-        </em>
-    </p>
-    <p> DRY stands for "Don't Repeat Yourself". This is ageneral software development principle and can
-        be applied in any programming language, as well as in CSS .
-        As we can understand from its name, DRY aims toavoid or reduce repetition as much as possible.
-    </p>
+        <p>To work efficiently on that project, first we need tounderstand the source code. This is the
+            point
+            when
+            we immediately realize theimportance of clean code. As developers, we must try to write ourcode
+            as
+            cleanly as possible.This is also the case for CSS .</p>
+        <p> There are some points we needto pay attention to while writing CSS. In this post, I would like
+            to
+            share
+            someof the most important ones with you. I believe these tips will help you toimprove the
+            quality of
+            your CSS code.So let's begin...</p>
+        <p><em>
+                <h3>DRY</h3>
+            </em>
+        <p> DRY stands for "Don't Repeat Yourself". This is ageneral software development principle and can
+            be
+            applied in any programming language, as well as in CSS . As we can understand from its name, DRY
+            aims
+            toavoid or reduce repetition as much as possible.</p>
 
-    <dl> <em>
+        <dl> <em>
+                <dt>
+                    <h3> Don't Use Inline-Styles</h3>
+                </dt>
+            </em></p>
+            <dd> Well, there are arguments on the web about this: some aretelling you never to use inline
+                styles,
+                while
+                others are arguing that it can beuseful in some cases.In my opinion, the best practice is
+                actually
+                not
+                usinginline styles. I will focus here on why we shouldn't.</dd>
+
             <dt>
-                <h3> Don't Use Inline-Styles</h3>
+                <h4><em> Separation of Concerns</h4></em>
             </dt>
-        </em>
-        <dd> Well, there are arguments on the web about this: some aretelling you never to use inline
-            styles, while others are arguing that it can beuseful in some cases.In my opinion, the best practice is
-            actually not usinginline styles. I will focus here on why we shouldn't.
-        </dd>
+            <dd> According to the separation of concerns principle, design(CSS ), content (HTML ) and logic
+                (JavaScript)
+                should be separated for reasons like better readability and maintenance.</dd>
 
-        <dt>
-            <em>
-                <h4> Separation of Concerns</h4>
-            </em>
-        </dt>
-        <dd> According to the separation of concerns principle, design(CSS ), content (HTML ) and logic
-            (JavaScript) should be separated for reasons like better readability and maintenance.
-        </dd>
+            <dt>
+                <h4><em>Difficultiesin Search</h4></em>
+            </dt>
+            <dd> Another problem with using inline-styles is that we can't search for them. So when we need
+                to
+                make a
+                change on styling, we normally lookfor CSS selectors of the HTML element.</dd>
 
-        <dt>
-            <em>
-                <h4>Difficultiesin Search</h4>
-            </em>
-        </dt>
-        <dd> Another problem with using inline-styles is that we can't search for them. So when we need
-            to make a change on styling, we normally lookfor CSS selectors of the HTML element.
-        </dd>
-
-        <dt>
-            <em>
-                <h4>Specificity/ Overwrite Issues</h4>
-            </em>
-        </dt>
-        <dd>Inline-Styles have the highest specificity among CSS selectors (when we don't count
-            !important tags).
-        </dd>
-    </dl>
-    <p>You can read the full article at
-        <em>
-            <strong>https://www.freecodecamp.org/news/7-important-tips-for-writing-better-css</strong>
-        </em>
-    </p>
-
-    <footer>
-        <p>Fernando Ernesto Alvarez Castillo | practice UOC 2022<br>
+            <dt>
+                <h4><em>Specificity/ Overwrite Issues</h4></em>
+            </dt>
+            <dd>Inline-Styles have the highest specificity among CSS selectors (when we don't count
+                !important
+                tags).
+            </dd>
+        </dl>
+        <p>You can read the full article at
+            <em><strong>
+                    https://www.freecodecamp.org/news/7-important-tips-for-writing-better-css</strong></em>
 
         </p>
-    </footer>
+        </p>
+        <footer>
+            <p>Fernando Ernesto Alvarez Castillo | practice UOC 2022<br>
 
+            </p>
+        </footer>
+    </div>
 </body>
 
 </html>
